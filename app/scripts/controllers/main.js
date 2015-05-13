@@ -20,7 +20,7 @@ angular.module('twitterBlockquoteApp')
   	$http.get('/twitter.php')
 	.success(function (data) {
 		$scope.tweet = data;
-		$scope.createdAt = data.created_at;
+		$scope.createdAt = new Date(Date.parse(data.created_at));
 		$scope.text = data.text;
 		$scope.name = data.user.name;
 		$scope.profileImage = data.user.profile_image_url;

@@ -5,8 +5,8 @@
 	
 	<div class="col-md-8" id="tweetRow" ng-controller="tweetCtrl">
 		<img ng-src="{{profileImage}}" alt="Profile image">
-		<blockquote>{{text}}</blockquote>
-		<h2>—{{name}} <small>{{createdAt}}</small></h2>
-		<p>{{screenName}}</p>
+		<blockquote ng-bind="text"></blockquote>
+		<h2>—{{name}} <small>{{screenName}}</small></h2>
+		<p ng-bind="createdAt | date: 'medium'"></p>
 	</div><!-- end tweetRow -->
 </div><!-- end row -->

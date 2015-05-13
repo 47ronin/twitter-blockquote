@@ -1,7 +1,9 @@
 {
   "name": "twitterblockquote",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "grunt-bower-submodule": "^0.2.6"
+  },
   "repository": {},
   "devDependencies": {
     "grunt": "^0.4.5",

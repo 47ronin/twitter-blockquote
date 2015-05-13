@@ -16,6 +16,8 @@ Blockquote, on the other hand, is resolution-independent. It can be used to feat
 
 - Use an array to store a number of memorable tweets and cycle through them
 - Use a definable timer to control the cycle
+- Create a number of Blockquote themes
+- Allow user to define a theme per Blockquote
 - Integrate Animate.css to improve the feel of the presentation
 
 ## Technology stack

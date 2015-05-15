@@ -28,7 +28,7 @@ Blockquote, on the other hand, is resolution-independent. It can be used to feat
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+Run `grunt` for building and `grunt serve` for preview. You may need to enable Cross-Origin Resource Sharing in your browser when you're testing on localhost. There's a [Chrome plugin](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en) for that.
 
 ## Testing
 

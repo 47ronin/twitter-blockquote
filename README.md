@@ -3,8 +3,7 @@
 This project’s framework was originally generated with the [Yeoman AngularJS Generator](https://github.com/yeoman/generator-angular)
 version 0.11.1. Font Awesome was included using `bower install fontawesome --save`.
 
-OAuth authentication is currently done by calling James Mallison’s [twitter-api-php](https://github.com/J7mbo/twitter-api-php) library.
-His library also gets the initial JSON response when calling for a specific tweet.
+OAuth Twitter authentication is done using OAuth.io’s [JavaScript](https://github.com/oauth-io/oauth-js) library.
 
 ## Features
 

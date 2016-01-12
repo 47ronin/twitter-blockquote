@@ -8,8 +8,8 @@
  * Controller of the twitterBlockquoteApp
  */
 angular.module('twitterBlockquoteApp')
-  .controller('AboutCtrl', function ($scope) {
-    $scope.awesomeThings = [
+  .controller('AboutCtrl', function () {
+    this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'

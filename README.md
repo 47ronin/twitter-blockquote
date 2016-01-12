@@ -1,7 +1,7 @@
 # Twitter Blockquote
 
 This project’s framework was originally generated with the [Yeoman AngularJS Generator](https://github.com/yeoman/generator-angular)
-version 0.11.1. Font Awesome was included using `bower install fontawesome --save`.
+version 0.15.1. Font Awesome was included using `bower install fontawesome --save`.
 
 OAuth Twitter authentication is done using OAuth.io’s [JavaScript](https://github.com/oauth-io/oauth-js) library.
 

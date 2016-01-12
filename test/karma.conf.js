@@ -1,7 +1,7 @@
 // Karma configuration
 // http://karma-runner.github.io/0.12/config/configuration-file.html
-// Generated on 2015-04-05 using
-// generator-karma 0.9.0
+// Generated on 2016-01-12 using
+// generator-karma 1.0.1
 
 module.exports = function(config) {
   'use strict';
@@ -14,7 +14,10 @@ module.exports = function(config) {
     basePath: '../',
 
     // testing framework to use (jasmine/mocha/qunit/...)
-    frameworks: ['jasmine'],
+    // as well as any additional frameworks (requirejs/chai/sinon/...)
+    frameworks: [
+      "jasmine"
+    ],
 
     // list of files / patterns to load in the browser
     files: [
@@ -33,9 +36,9 @@ module.exports = function(config) {
       'bower_components/oauth-js/dist/oauth.min.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
-      'app/scripts/**/*.js',
-      'test/mock/**/*.js',
-      'test/spec/**/*.js'
+      "app/scripts/**/*.js",
+      "test/mock/**/*.js",
+      "test/spec/**/*.js"
     ],
 
     // list of files / patterns to exclude
@@ -54,13 +57,13 @@ module.exports = function(config) {
     // - PhantomJS
     // - IE (only Windows)
     browsers: [
-      'PhantomJS'
+      "PhantomJS"
     ],
 
     // Which plugins to enable
     plugins: [
-      'karma-phantomjs-launcher',
-      'karma-jasmine'
+      "karma-phantomjs-launcher",
+      "karma-jasmine"
     ],
 
     // Continuous Integration mode

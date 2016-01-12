@@ -8,13 +8,13 @@
  * Controller of the twitterBlockquoteApp
  */
 angular.module('twitterBlockquoteApp')
-	.controller('MainCtrl', function ($scope) {
-		$scope.awesomeThings = [
-			'HTML5 Boilerplate',
-			'AngularJS',
-			'Karma'
-		];
-	}) // end controller
+  .controller('MainCtrl', function () {
+    this.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Karma'
+    ];
+  }) // end controller
 	.controller('tweetCtrl', function($scope, $q, tweetService) {
 		$scope.tweet;
 		tweetService.initialize();
@@ -33,12 +33,12 @@ angular.module('twitterBlockquoteApp')
 	}) // end controller
 	.factory('tweetService', function($q) {
 		var authorizationResult = false;
-		
+
 		return {
 			initialize: function() {
 				OAuth.initialize('PUBLIC_KEY', {cache:true});
 				authorizationResult = OAuth.create('twitter');
-				
+
 				// if not connected, try once:
 				var deferred = $q.defer();
 				OAuth.popup('twitter', {cache:true}, function(error, result) {
